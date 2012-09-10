@@ -5,7 +5,7 @@
 
 <xsl:output encoding="utf-8"/>
 
-<xsl:param name="its-attrs"> its-loc-note its-loc-note-type its-loc-note-ref its-term-info-ref its-term its-within-text locale-filter-list </xsl:param>
+<xsl:param name="its-attrs"> its-loc-note its-loc-note-type its-loc-note-ref its-term-info-ref its-term its-within-text its-locale-filter-list its-entity-type-source-ref its-disambig-type its-disambig-source-ref its-disambig-ident-ref its-loc-quality-issues-ref its-loc-quality-issue-type its-loc-quality-issue-comment its-loc-quality-issue-severity its-loc-quality-issue-profile-ref its-loc-quality-precis-score its-loc-quality-precis-vote its-loc-quality-precis-threshold its-loc-quality-precis-profile-ref its-allowed-characters its-storage-size its-storage-size-encoding </xsl:param>
 
 <xsl:template match="node()|@*">
   <xsl:copy>
@@ -21,7 +21,7 @@
 
 <xsl:template match="@*[starts-with(name(), 'its-')]">
   <xsl:choose>
-    <xsl:when test="not(contains($its-attrs, name()))">
+    <xsl:when test="not(contains($its-attrs, concat(' ', name(), ' ')))">
       <xsl:message>Unsupported its-* attribute named '<xsl:value-of select="name()"/>'. Ignoring.</xsl:message>
     </xsl:when>
     <xsl:otherwise>
