@@ -12,7 +12,7 @@ Any HTML5 page with local ITS markup entered as its-* attributes can
 be converted into XHTML + ITS markup (attributes in ITS namespace) by
 the following command:
 
-    java -cp lib/htmlparser.jar nu.validator.htmlparser.tools.XSLT4HTML5 --template=xsl/html2xhtml.xsl --input-html=example.html --output-xml=example.xhtml
+    java -cp lib/htmlparser-1.4.jar nu.validator.htmlparser.tools.XSLT4HTML5 --template=xsl/html2xhtml.xsl --input-html=example.html --output-xml=example.xhtml
 
 
 Validating HTML5+ITS
