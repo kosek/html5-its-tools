@@ -21,5 +21,5 @@ Validating HTML5+ITS
 Any HTML5 page with local ITS markup entered as its-* attributes can
 be validated by the following command:
 
-    java -cp schema;lib/jing.jar;lib/html5-datatypes.jar;lib/iri.jar;lib/js.jar;lib/htmlparser.jar;lib/icu4j-4_4_2.jar com.thaiopensource.relaxng.util.Driver -c schema\html5-its.rnc example.html
+    java -cp schema;lib/jing.jar;lib/html5-datatypes.jar;lib/iri.jar;lib/js.jar;lib/htmlparser.jar;lib/icu4j-4_4_2.jar com.thaiopensource.relaxng.util.Driver -c schema\html5-its-lang.rnc example.html
 
