@@ -5,7 +5,7 @@
 
 <xsl:output encoding="utf-8"/>
 
-<xsl:param name="its-attrs"> its-loc-note its-loc-note-type its-loc-note-ref its-term-info-ref its-term its-within-text its-locale-filter-list its-entity-type-source-ref its-disambig-type its-disambig-source-ref its-disambig-ident-ref its-loc-quality-issues-ref its-loc-quality-issue-type its-loc-quality-issue-comment its-loc-quality-issue-severity its-loc-quality-issue-profile-ref its-loc-quality-precis-score its-loc-quality-precis-vote its-loc-quality-precis-threshold its-loc-quality-precis-profile-ref its-allowed-characters its-storage-size its-storage-size-encoding </xsl:param>
+<xsl:param name="its-attrs"> its-allowed-characters its-annotators-ref its-line-break-type its-loc-note its-loc-note-ref its-loc-note-type its-loc-quality-issue-comment its-loc-quality-issue-enabled its-loc-quality-issue-profile-ref its-loc-quality-issue-severity its-loc-quality-issue-type its-loc-quality-issues-ref its-loc-quality-rating-profile-ref its-loc-quality-rating-score its-loc-quality-rating-score-threshold its-loc-quality-rating-vote its-loc-quality-rating-vote-threshold its-locale-filter-list its-locale-filter-type its-mt-confidence its-org its-org-ref its-person its-person-ref its-prov-ref its-provenance-records-ref its-rev-org its-rev-org-ref its-rev-person its-rev-person-ref its-rev-tool its-rev-tool-ref its-storage-encoding its-storage-size its-ta-class-ref its-ta-confidence its-ta-ident its-ta-ident-ref its-ta-source its-term its-term-confidence its-term-info-ref its-tool its-tool-ref its-within-text </xsl:param>
 
 <xsl:template match="node()|@*">
   <xsl:copy>
