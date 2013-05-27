@@ -15,6 +15,16 @@ the following command:
     java -cp lib/htmlparser-1.4.jar nu.validator.htmlparser.tools.XSLT4HTML5 --template=xsl/html2xhtml.xsl --input-html=example.html --output-xml=example.xhtml
 
 
+Converting XHTML+ITS into HTML5
+-------------------------------
+
+Any XHTML page with local ITS markup entered as its:* attributes can
+be converted into HTML5 + ITS markup (its-* prefixed attributes) by
+the following command:
+
+    java -jar lib/saxon9he.jar -versionmsg:off -s:example.xhtml -o:example.html -xsl:xsl/xhtml2html.xsl
+
+
 Validating HTML5+ITS
 --------------------
 
