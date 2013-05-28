@@ -13,6 +13,10 @@
   </xsl:copy>
 </xsl:template>
 
+<xsl:template match="script[@type = 'application/its+xml']/text()">
+  <xsl:value-of disable-output-escaping="yes" select="."/>
+</xsl:template>
+
 <xsl:template match="@translate">
   <xsl:attribute name="its:translate">
     <xsl:value-of select="."/>
