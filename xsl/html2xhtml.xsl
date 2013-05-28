@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:its="http://www.w3.org/2005/11/its"
+		xmlns:xhtml="http://www.w3.org/1999/xhtml"
+		exclude-result-prefixes="its xhtml"
 		version="1.0">
 
 <xsl:output encoding="utf-8"/>
@@ -13,7 +15,7 @@
   </xsl:copy>
 </xsl:template>
 
-<xsl:template match="script[@type = 'application/its+xml']/text()">
+<xsl:template match="script[@type = 'application/its+xml']/text() | xhtml:script[@type = 'application/its+xml']/text()">
   <xsl:value-of disable-output-escaping="yes" select="."/>
 </xsl:template>
 
